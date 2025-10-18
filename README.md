@@ -104,3 +104,16 @@ This project integrates with various external services. The API keys for these s
     ```
 
     The application will now be accessible at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 🔑 Demo Admin Account
+
+To test the application's features, including the instructor dashboard, you can use the following administrator credentials. This account has full privileges to create, edit, and manage courses.
+
+| Field        | Value                 |
+| :----------- | :-------------------- |
+| **Email**    | `coursifya@gmail.com` |
+| **Password** | `2025admin2026`       |
+
+---

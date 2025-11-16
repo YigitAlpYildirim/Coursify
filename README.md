@@ -24,7 +24,6 @@ The primary goal of this project is to create a modern full-stack application ar
 - **Advanced Media Uploads & Processing:**
   - **UploadThing:** Used for secure and scalable file uploads. Upload operations are handled directly from the client to UploadThing's servers, reducing the load on our own backend.
   - **Mux Video Streaming:** Uploaded videos are processed through the Mux platform. Mux provides **adaptive bitrate streaming** (ABR) technology, which adjusts to different internet speeds to ensure a seamless viewing experience for every user.
-- **Payment & Revenue Management with Stripe:** Course sales are managed via the Stripe API. Post-payment operations are handled asynchronously through Stripe Webhooks, increasing the system's resilience.
 
 ### 👨‍🎓 Student Experience
 
@@ -51,19 +50,17 @@ The primary goal of this project is to create a modern full-stack application ar
 
 ## ⚙️ Environment Variables & Setup (`.env`)
 
-This project integrates with various external services. The API keys for these services must be stored in an `.env` file. **SECURITY WARNING: NEVER commit your `.env` file to your `git` repository!** A template file named `.env.example` is included in the project. Create a copy named `.env` and fill it with your own keys.
+This project integrates with various external services. The API keys for these services must be stored in an `.env` file. **SECURITY WARNING: NEVER commit your `.env` file to your `git` repository\!** A template file named `.env.example` is included in the project. Create a copy named `.env` and fill it with your own keys.
 
 | Variable                            | Purpose                                                                      | Where to Get                                                                         |
 | :---------------------------------- | :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
 | `DATABASE_URL`                      | The connection string for the PostgreSQL database.                           | Should match the credentials in the `docker-compose.yml` file for local development. |
-| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | The public key for Clerk to be used on the client-side.                      | [Clerk Dashboard](https://dashboard.clerk.dev) -> API Keys                           |
-| `CLERK_SECRET_KEY`                  | The secret key for Clerk's server-side operations.                           | [Clerk Dashboard](https://dashboard.clerk.dev) -> API Keys                           |
-| `UPLOADTHING_SECRET`                | The secret key for authenticating with the UploadThing service.              | [UploadThing Dashboard](https://uploadthing.com/dashboard) -> API Keys               |
-| `UPLOADTHING_APP_ID`                | The unique identifier for your application on UploadThing.                   | [UploadThing Dashboard](https://uploadthing.com/dashboard) -> API Keys               |
-| `MUX_TOKEN_ID`                      | The access token ID for the Mux video processing service.                    | [Mux Dashboard](https://dashboard.mux.com/) -> Settings -> API Access Tokens         |
-| `MUX_TOKEN_SECRET`                  | The secret token for the Mux service.                                        | [Mux Dashboard](https://dashboard.mux.com/) -> Settings -> API Access Tokens         |
-| `STRIPE_API_KEY`                    | The secret key for Stripe payment operations.                                | [Stripe Dashboard](https://dashboard.stripe.com) -> Developers -> API keys           |
-| `STRIPE_WEBHOOK_SECRET`             | The key used to verify incoming webhook requests from Stripe.                | [Stripe Dashboard](https://dashboard.stripe.com) -> Developers -> Webhooks           |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | The public key for Clerk to be used on the client-side.                      | [Clerk Dashboard](https://dashboard.clerk.dev) -\> API Keys                          |
+| `CLERK_SECRET_KEY`                  | The secret key for Clerk's server-side operations.                           | [Clerk Dashboard](https://dashboard.clerk.dev) -\> API Keys                          |
+| `UPLOADTHING_SECRET`                | The secret key for authenticating with the UploadThing service.              | [UploadThing Dashboard](https://uploadthing.com/dashboard) -\> API Keys              |
+| `UPLOADTHING_APP_ID`                | The unique identifier for your application on UploadThing.                   | [UploadThing Dashboard](https://uploadthing.com/dashboard) -\> API Keys              |
+| `MUX_TOKEN_ID`                      | The access token ID for the Mux video processing service.                    | [Mux Dashboard](https://dashboard.mux.com/) -\> Settings -\> API Access Tokens       |
+| `MUX_TOKEN_SECRET`                  | The secret token for the Mux service.                                        | [Mux Dashboard](https://dashboard.mux.com/) -\> Settings -\> API Access Tokens       |
 | `NEXT_PUBLIC_APP_URL`               | The base URL where the application will run (e.g., `http://localhost:3000`). | Set manually.                                                                        |
 
 ---
@@ -80,9 +77,11 @@ This project integrates with various external services. The API keys for these s
     ```
 
 2.  **Install Dependencies:**
+
     ```bash
     npm install
     ```
+
 3.  **Set Up Environment Variables:**
     Create a `.env` file by copying the `.env.example` template and fill in your API keys as described in the table above.
 
@@ -103,7 +102,7 @@ This project integrates with various external services. The API keys for these s
     npm run dev
     ```
 
-    The application will now be accessible at [http://localhost:3000](http://localhost:3000).
+    The application will now be accessible at [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000).
 
 ---
 
